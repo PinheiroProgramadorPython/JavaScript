@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contador</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+   <header>
+        <div class="headers">
+            <h1>Bem Vindo ao App Contador</h1>
+        </div>
+   </header>
+   <section>
+        <div class="inputs">
+            <div class="inicio">
+                <label for="inicio">Coloque o Numero Inicial</label>
+                <input type="number" id="inicio" name="inicio">
+            </div>
+            <div class="passo">
+                <label for="passo">Ajuste o Passo Contador</label>
+                <input type="number" id="passo" name="passo">
+            </div>
+            <div class="fim">
+                <label for="fim">Coloque o Numero Final</label>
+                <input type="number" id="fim" name="fim">
+            </div>
+        </div>
+        <div class="tela" id="tela">
+            <div class="contador" id="contador">
+                <span class="numeros" id="num"></span>
+            </div>
+        </div>
+        <div class="botao">
+            <button id="botao">Contar</button>
+        </div>
+   </section> 
+   <script src="contador.js"></script>
+</body>
+</html>
