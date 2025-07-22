@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adiconando Eventos com JavaScript</title>
+    <style>
+        div{
+            display: flex;
+           justify-content: center;
+           align-items: center;
+            background-color: blueviolet;
+            margin: 100px 100px;
+            width: 300px;
+            height: 100px;
+            border-radius: 20px;
+        }
+
+        .tela{
+            background-color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            visibility: hidden;
+        }
+
+        .texto{
+            text-align: center;
+            font-size: 25px;
+            width: 100%;
+            height: 30px;
+            background-color: beige;
+            color: black;
+            border-radius: 20px;
+        }
+
+        button{
+            font-size: 50px;
+            width: 100%;
+            height: 75px;
+            background-color: beige;
+            color: gray;
+            border-radius: 20px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+   <div>
+        <button id="btn">Click Aqui</button>
+   </div>
+   <div id="tela" class="tela">
+        <span id="texto" class="texto"></span>
+   </div>
+   <script>
+        let botao = document.getElementById("btn")
+        let tela = document.getElementById("tela")
+        let texto = document.getElementById("texto")
+        let cont = 0
+        function clicar(event){          
+            tela.style.visibility = "visible"
+            cont ++
+            texto.innerText = "Você Clicou " + cont + " Vez"         
+            if(cont >= 11){
+                botao.style.cursor = "none"
+                texto.innerText = "Agora já Chega Né"
+                botao.removeEventListener("click", clicar)
+            }           
+        }
+        
+        botao.addEventListener("click", clicar)
+   </script> 
+</body>
+</html>

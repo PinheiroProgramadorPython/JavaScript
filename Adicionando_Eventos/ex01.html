@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adiconando Eventos com JavaScript</title>
+    <style>
+        .title{
+            margin: 50px 50px;
+            border-radius: 20px; 
+            width: 300px;
+            height: 150px;
+            background-color: azure;
+            text-align: center;
+        }
+
+        .changecolor{
+            display: flex;
+            justify-content: center;
+            align-content: center;
+            align-items: center;
+            justify-items: center;          
+            background-color: aqua;
+            width: 300px;
+            height: 150px;
+            margin: 50px 50px;
+            border-radius: 20px;          
+        }
+
+        .changecolor img{
+            width: 150px;
+            height: 300px;                   
+            transform: rotate(90deg);
+            border-radius: 20px;
+        }
+
+        .tela{
+            visibility: hidden;
+            border-radius: 10px;
+            background-color: rgba(245, 222, 179, 0.379);
+            width: 150px;
+            height: 32.5px;
+            text-align: center;
+            margin: 50px 125px;
+            align-content: center;
+        }
+
+        .texto{
+            color: green;
+        }      
+    </style>
+</head>
+<body>
+    <div class="title">
+        <h1>Apenas uma Brincadeira</h1>
+        <p>Por favor não se Sinta Ofendido!</p>
+    </div>
+    <div id="changecolor" class="changecolor">
+        <img src="img/Viviane-Araujo-nua-atriz-Viviane-Araujo-pelada-072.jpg" alt="Viviane-Araujo-nua-atriz-Viviane-Araujo-pelada">
+    </div>
+    <div id="tela" class="tela"><span id="texto" class="texto"></span></div>
+    <script>
+        let changecolor = document.getElementById("changecolor")
+        let tela = document.getElementById("tela")
+        let texto = document.getElementById("texto")
+        let vivianeAraujo = document.getElementsByTagName("img")[0]
+        let cont = 0
+        function passarMouse(){
+            changecolor.style.backgroundColor = "yellow"
+            tela.style.visibility = "visible"
+            changecolor.style.cursor = "pointer"
+            vivianeAraujo.style.width = "200px"
+            if(cont === 0){
+                texto.innerText = "Vc passou a Mão em Mim"
+                cont += 1
+            }
+            else if(cont > 10){
+                texto.innerText = "Agora Já Chega Né! Tchau Tchau Gatinho!"
+                <!-- changecolor.removeEventListener("mouseover", passarMouse) -->
+                vivianeAraujo.style.visibility = "hidden"
+            }
+            else{
+                texto.innerText = "Outra Vez Vc passou a Mão em Mim! " + cont + " Vezes ...kkk"
+                cont += 1
+            }            
+        }
+        function tirarMouse(){
+            vivianeAraujo.style.width = "150px"
+            changecolor.style.backgroundColor = "aqua"
+            tela.style.visibility = "hidden"
+            texto.innerText = ""
+        }
+        changecolor.addEventListener("mouseover", passarMouse)
+        changecolor.addEventListener("mouseout", tirarMouse)
+    </script>
+</body>
+</html>
