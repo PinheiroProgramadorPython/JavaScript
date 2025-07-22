@@ -5,11 +5,11 @@
 <br>
 <a href="counter/index.html">Acesse o Counter</a>
 <br>
-<a href="Adicionando_Eventos/ex01.html">Acesse o Counter</a>
+<a href="Adicionando_Eventos/ex01.html">Adicionando_Eventos ao DOM</a>
 <br>
-<a href="eventos-mouse/index.html">Acesse o Counter</a>
+<a href="eventos-mouse/index.html">Acesse o eventos-mouse</a>
 <br>
-<a href="script-img/index.html">Acesse o Counter</a>
+<a href="script-img/index.html">Acesse o script-img</a>
 <br>
-<a href="taskList/task-list.html">Acesse o Counter</a>
+<a href="taskList/task-list.html">Acesse o taskList</a>
 <br>
