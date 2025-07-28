@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora Simples</title>
+    <style>
+        html,body{
+            width: 100vw;
+            height: 100vh;
+            margin: 0px;
+            padding: 0px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-evenly;
+            
+            background-color: gray;
+        }
+
+        .title{
+            padding: 20px;
+            background-color: wheat;
+            border-radius: 30px;
+        }
+
+        .inputs{
+            display: flex;
+            align-items: center;
+            flex-flow: row nowrap;
+            justify-content: space-around;
+            background-color: wheat;
+            border-radius: 30px;
+            height: 200px;
+            width: 400px;
+        }
+
+        .inputs div{
+            background-color: rgba(137, 43, 226, 0.425);
+            border-radius: 20px;
+            padding: 10px;
+            height: 100px; 
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-around;
+        }
+
+        input{
+            border-radius: 10px;
+        }
+
+        .calc{
+            background-color: wheat;
+            width: 400px;
+            height: 100px;
+            border-radius: 30px;
+            display: flex;
+            flex-flow: row nowrap;
+            justify-content: space-around;
+            align-items: center;
+        }
+
+        .limpar{
+            background-color: wheat;
+            width: 200px;
+            height: 50px;
+            border-radius: 30px;
+            display: flex;
+            flex-flow: row nowrap;
+            justify-content: space-around;
+            align-items: center;
+        }
+
+        .tela{
+            visibility: hidden;
+            padding: 20px;
+            background-color: wheat;
+            border-radius: 30px;
+            height: 100px;
+            width: 200px;
+            display:flex;
+            flex-flow: row wrap;
+            align-items: center;
+            justify-content: center;         
+        }
+
+        button{
+            border-radius: 20px;
+            cursor: pointer;
+            font-size: larger;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="title">
+        <h1>App Calculator</h1>
+    </div>
+    <div class="inputs">
+        <div>
+            <label for="number1">Digite Numero</label>
+            <input type="number" id="number1" name="number1">
+        </div>
+        <div>
+            <label for="number2">Digite Numero</label>
+            <input type="number" id="number2" name="number2">
+        </div>
+    </div>
+    <div class="calc">
+        <button id="somar">Soma</button>
+        <button id="subtrair">Subtração</button>
+        <button id="multiplicar">Multiplicação</button>
+        <button id="dividir">Divisão</button>
+    </div class="limpar">
+    <div>
+        <button id="limpar">Limpar</button>
+    </div>  
+    <div id="tela" class="tela">
+        <h3 id="result">Resultado</h3>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
