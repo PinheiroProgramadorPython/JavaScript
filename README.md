@@ -17,3 +17,6 @@
 <P>Aplicativo Simples de Lista de Tarefas</P>
 <a href="taskList/task-list.html" target="_blank">Acesse o taskList</a>
 <br>
+<P>App Calculator</P>
+<a href="calculator/index.html" target="_blank">Acesse o App Calculator</a>
+<br>
