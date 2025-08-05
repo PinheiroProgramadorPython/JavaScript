@@ -21,4 +21,4 @@
 <a href="calculator/index.html" target="_blank">Acesse o App Calculator</a>
 <br>
 <p>App Profile</p>
-<a href= "Profile-Project/src/App.jsx">
+<a href= "Profile-Project/src/App.jsx" target="_blank">Acesse o Profile</a>
