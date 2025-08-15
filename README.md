@@ -25,3 +25,5 @@
 <br>
 <a href="form/form.html" target="_blank">Formulário</a>
 <br>
+<a href="calculador-IMC/index.html">Calculador IMC</a>
+<br>
