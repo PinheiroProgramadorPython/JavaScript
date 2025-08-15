@@ -2,28 +2,30 @@
 <br>
 <h3>Manipulando o DOM com JavaScript</h3>
 <br>
-<P>Aplicativo Simples de Contagem de Numbers</P>
+<p>Aplicativo Simples de Contagem de Numbers</p>
 <a href="counter/index.html" target="_blank">Acesse o Counter</a>
 <br>
-<P>Aplicativo Simples com Varios Eventos Adicionados ao DOM</P>
+<p>Aplicativo Simples com Varios Eventos Adicionados ao DOM</p>
 <a href="Adicionando_Eventos/ex01.html" target="_blank">Adicionando_Eventos ao DOM</a>
 <br>
-<P>Aplicativo Simples de Eventos do Mouse</P>
+<p>Aplicativo Simples de Eventos do Mouse</p>
 <a href="eventos-mouse/index.html" target="_blank">Acesse o eventos-mouse</a>
 <br>
-<P>Aplicativo Simples de Imagem</P>
+<p>Aplicativo Simples de Imagem</p>
 <a href="script-img/index.html" target="_blank">Acesse o script-img</a>
 <br>
-<P>Aplicativo Simples de Lista de Tarefas</P>
+<p>Aplicativo Simples de Lista de Tarefas</p>
 <a href="taskList/task-list.html" target="_blank">Acesse o taskList</a>
 <br>
-<P>App Calculator</P>
+<p>App Calculator</p>
 <a href="calculator/index.html" target="_blank">Acesse o App Calculator</a>
 <br>
 <p>App Profile</p>
 <a href= "Profile-Project/src/App.jsx" target="_blank">Acesse o Profile</a>
 <br>
-<a href="form/form.html" target="_blank">Formulário</a>
+<p>Formulário</p>
+<a href="form/form.html" target="_blank">Acesse o Formulário</a>
 <br>
-<a href="calculador-IMC/index.html">Calculador IMC</a>
+<p>Calculador de IMC que mostra Categoria de Peso</p>
+<a href="calculador-IMC/index.html">Acesse o Calculador IMC</a>
 <br>
