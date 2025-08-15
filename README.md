@@ -20,7 +20,7 @@
 <p>App Calculator</p>
 <a href="calculator/index.html" target="_blank">Acesse o App Calculator</a>
 <br>
-<p>App Profile</p>
+<p>App Profile feito com React</p>
 <a href= "Profile-Project/src/App.jsx" target="_blank">Acesse o Profile</a>
 <br>
 <p>Formulário para Criar Conta</p>
